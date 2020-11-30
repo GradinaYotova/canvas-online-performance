@@ -1,8 +1,8 @@
 var socket;
 var mySketches = [];
 
-// socket = io.connect('http://192.168.2.3:3000'); 
-socket = io.connect('http://localhost:3000');
+socket = io.connect('http://192.168.2.3:3000'); 
+// socket = io.connect('http://localhost:3000');
 
 var myDrawingSketch = function(p) {
 
