@@ -32,12 +32,6 @@ function newConnection(socket) {
 		console.log(data);
 	}
 
-	// function mouseMessage_2(data_2) {
-	// 	socket.broadcast.emit('mouse2', data_2);
-	// 	console.log(data_2);
-	// }
-	// function mouseMessage_3(data_3) {
-	// 	socket.broadcast.emit('mouse3', data_3);
-	// 	console.log(data_3);
-	// }
+setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
+
 }
