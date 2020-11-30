@@ -1,13 +1,13 @@
 const express = require('express'); 
 const app = express();
-// const server = app.listen(3000);
-let server = app.listen(process.env.PORT || 3000, listen)
+const server = app.listen(3000);
+// let server = app.listen(process.env.PORT || 3000, listen)
 
-function listen() {
-  let host = '192.168.2.224'
-  let port = server.address().port
-  console.log('Example app listening at http://' + host + ':' + port)
-}
+// function listen() {
+//   let host = '192.168.2.224'
+//   let port = server.address().port
+//   console.log('Example app listening at http://' + host + ':' + port)
+// }
 
 app.use(express.static('public')); 
 
