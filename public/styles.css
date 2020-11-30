@@ -1,0 +1,22 @@
+body{
+	height:3000px;
+	background-image: url("grid-long.png");
+	background-size: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+}
+
+#defaultCanvas0{
+	margin-top:4vh;
+	margin-left:23vw;	
+}
+
+#defaultCanvas1{
+	margin-top:22vh;
+	margin-left:23vw;
+}
+
+#defaultCanvas2{
+	margin-top:23vh;
+	margin-left:23vw;
+}
