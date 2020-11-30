@@ -1,7 +1,5 @@
 var socket;
 var mySketches = [];
-var socket = io();
-var el;
 
 socket = io.connect('http://192.168.2.224:3000'); 
 
@@ -49,8 +47,3 @@ for(var i = 0; i < 1; i++) {
 	mySketches[i].index = i;
 }
 
-
-socket.on('time', function(timeString) {
-  el = document.getElementById('server-time')
-  el.innerHTML = 'Server time: ' + timeString;
-});
