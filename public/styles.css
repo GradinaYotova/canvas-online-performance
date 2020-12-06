@@ -23,7 +23,7 @@ a{
   	left:50%;
   	transform:translate(-40%);
 	font-family:myFont;
-	font-size:2em;
+	font-size:3em;
 	color:#fff;
 	text-decoration: none;
 	filter:blur(2px);
@@ -32,4 +32,5 @@ a{
 a:hover{
 	font-size:4em;
 	filter:blur(0px);
+	cursor: pointer;
 }
