@@ -33,8 +33,13 @@ var myDrawingSketch = function(p) {
 
 		socket.emit('mouse', p.data); 
 
+		r = random(255); 
+  		g = random(100,200); 
+  		b = random(100);
+  		a = random(200,255); 
+
 		p.noStroke();
-		p.fill(0);
+		p.fill(r,g,b,a);
 		p.rect(p.mouseX, p.mouseY, 5, 5);
 	}
 
