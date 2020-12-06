@@ -16,7 +16,7 @@ body{
 
 a{
   	position: absolute;
-  	bottom:20%;
+  	top:10%;
   	left:50%;
   	transform:translate(-40%);
 	font-family:myFont;
