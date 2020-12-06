@@ -1,5 +1,9 @@
 var socket;
 var mySketches = [];
+var r;
+var g;
+var b;
+var a;
 
 socket = io.connect('https://canvas-online.herokuapp.com/'); 
 // socket = io.connect('http://localhost:3000');
