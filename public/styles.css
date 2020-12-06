@@ -15,10 +15,6 @@ body{
 
 
 a{
-  	position: absolute;
-  	bottom:1%;
-  	left:50%;
-  	transform:translate(-40%);
 	font-family:myFont;
 	font-size:3em;
 	color:#fff;
