@@ -12,9 +12,14 @@ body{
 
 
 a{
-	font-size:5em;
-	margin-left:20%;
+	font-size:3em;
+	margin-left:25%;
 	font-family:Helvetica;
 	color:#000;
 	text-decoration: none;
+	filter:blur(5px);
+}
+
+a:hover{
+	filter:blur(0px);
 }
