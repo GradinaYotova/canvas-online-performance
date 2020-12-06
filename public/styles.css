@@ -18,3 +18,7 @@ a{
 	color:#000;
 	border-style: none;
 }
+
+a.active{
+	border-style: none;
+}
