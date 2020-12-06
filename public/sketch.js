@@ -26,19 +26,19 @@ var myDrawingSketch = function(p) {
 
 	p.mouseDragged = function() {
 
-		console.log(p.clientX + ',' + p.clientY);
+		console.log(p.mouseX + ',' + p.mouseY);
 		
 		p.data = {
 			index: p.index,
-			x: p.clientX,
-			y: p.clientY
+			x: p.mouseX,
+			y: p.mouseY
 		}
 
 		socket.emit('mouse', p.data); 
 
 		p.noStroke();
 		p.fill(255,0,1);
-		p.rect(p.clientX, p.clientY, 5, 5);
+		p.rect(p.mouseX, p.mouseY, 5, 5);
 	}
 
 	p.draw = function(){
