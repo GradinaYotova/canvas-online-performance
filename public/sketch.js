@@ -1,5 +1,6 @@
 var socket;
 var mySketches = [];
+
 var r;
 var g;
 var b;
@@ -16,11 +17,17 @@ var myDrawingSketch = function(p) {
 
 		socket.on('mouse', p.newDrawing);
 	}
-
+		
 	p.newDrawing = function(data){
 		if(data.index === p.index) {
+
+			p.r = random(255); 
+			p.g = random(100,200); 
+			p.b = random(100);
+			p.a = random(200,255);
+
 			p.noStroke();
-			p.fill(255,0,1);
+			p.fill(p.r,p.g,p.b,p.a);
 			p.rect(data.x, data.y, 5, 5);
 		}
 	}
@@ -37,13 +44,8 @@ var myDrawingSketch = function(p) {
 
 		socket.emit('mouse', p.data); 
 
-		r = random(255); 
-  		g = random(100,200); 
-  		b = random(100);
-  		a = random(200,255); 
-
 		p.noStroke();
-		p.fill(r,g,b,a);
+		p.fill(0);
 		p.rect(p.mouseX, p.mouseY, 5, 5);
 	}
 
