@@ -19,8 +19,8 @@ body{
 
 a{
 	font-size:4em;
-	margin-top:20%;
-	margin-left:25%;
+	margin: auto;
+  	width: 50%;
 	font-family:myFont;
 	color:#000;
 	text-decoration: none;
