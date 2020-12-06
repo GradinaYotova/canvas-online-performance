@@ -57,3 +57,6 @@ link.addEventListener('click', function(ev) {
 }, false);
 document.body.appendChild(link);
 
+function windowResized() {
+  resizeCanvas(1284.09, 437.67);
+}
