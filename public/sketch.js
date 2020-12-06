@@ -8,7 +8,7 @@ var myDrawingSketch = function(p) {
 
 	p.setup = function() {
 		p.createCanvas(1284.09, 437.67);
-		p.background(210);
+		p.background(215);
 
 		socket.on('mouse', p.newDrawing);
 	}
