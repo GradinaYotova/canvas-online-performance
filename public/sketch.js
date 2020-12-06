@@ -7,7 +7,7 @@ socket = io.connect('https://canvas-online.herokuapp.com/');
 var myDrawingSketch = function(p) {
 
 	p.setup = function() {
-		p.createCanvas(1284.09, 437.67);
+		p.createCanvas(80%, 437.67);
 		p.background(215);
 
 		socket.on('mouse', p.newDrawing);
