@@ -58,5 +58,5 @@ link.addEventListener('click', function(ev) {
 document.body.appendChild(link);
 
 function windowResized() {
-  resizeCanvas(1284.09, 437.67);
+  resizeCanvas(50, 50);
 }
