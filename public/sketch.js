@@ -17,7 +17,7 @@ var myDrawingSketch = function(p) {
 		if(data.index === p.index) {
 
 			p.noStroke();
-			p.fill(255,0,1);
+			p.fill(0);
 			p.rect(data.x, data.y, 5, 5);
 		}
 	}
@@ -35,7 +35,7 @@ var myDrawingSketch = function(p) {
 		socket.emit('mouse', p.data); 
 
 		p.noStroke();
-		p.fill(0);
+		p.fill(255,0,1);
 		p.rect(p.mouseX, p.mouseY, 5, 5);
 	}
 
