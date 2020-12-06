@@ -21,13 +21,13 @@ var myDrawingSketch = function(p) {
 	p.newDrawing = function(data){
 		if(data.index === p.index) {
 
-			p.r = random(255); 
-			p.g = random(100,200); 
-			p.b = random(100);
-			p.a = random(200,255);
+			r = random(255); 
+			g = random(100,200); 
+			b = random(100);
+			a = random(200,255);
 
 			p.noStroke();
-			p.fill(p.r,p.g,p.b,p.a);
+			p.fill(r,g,b,a);
 			p.rect(data.x, data.y, 5, 5);
 		}
 	}
