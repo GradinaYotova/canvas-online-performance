@@ -49,3 +49,11 @@ for(var i = 0; i < 1; i++) {
 	mySketches[i].index = i;
 }
 
+var link = document.createElement('a');
+    link.innerHTML = 'download image';
+link.addEventListener('click', function(ev) {
+    link.href = defaultCanvas0.toDataURL();
+    link.download = "mypainting.png";
+}, false);
+document.body.appendChild(link);
+
