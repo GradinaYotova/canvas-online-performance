@@ -9,8 +9,9 @@ body{
 }
 
 #defaultCanvas0{
-/*	margin-top:5%;
-	margin-left:5%;	*/
+	padding:2%;
+	margin-top:5%;
+	margin-left:5%;	
 	width:50%;
 	object-fit: contain;
 }
