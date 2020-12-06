@@ -1,15 +1,13 @@
 var socket;
 var mySketches = [];
 
-var widthCanvas = window.innerWidth;
-
 socket = io.connect('https://canvas-online.herokuapp.com/'); 
 // socket = io.connect('http://localhost:3000');
 
 var myDrawingSketch = function(p) {
 
 	p.setup = function() {
-		p.createCanvas(widthCanvas, 437.67);
+		p.createCanvas(1284.09, 437.67);
 		p.background(215);
 
 		socket.on('mouse', p.newDrawing);
