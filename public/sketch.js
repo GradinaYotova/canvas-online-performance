@@ -1,7 +1,7 @@
 var socket;
 var mySketches = [];
 
-var widthCanvas = window.innerWidth;
+var widthCanvas = 80%;
 
 socket = io.connect('https://canvas-online.herokuapp.com/'); 
 // socket = io.connect('http://localhost:3000');
