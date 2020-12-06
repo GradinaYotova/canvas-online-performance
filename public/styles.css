@@ -16,9 +16,5 @@ a{
 	margin-left:20%;
 	font-family:Helvetica;
 	color:#000;
-	border-style: none;
-}
-
-a.active{
-	border-style: none;
+	text-decoration: none;
 }
