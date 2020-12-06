@@ -1,6 +1,7 @@
 body{
 	height:3000px;
   	background-color:rgba(0,255,0);
+  	position:fixed;
 }
 
 #defaultCanvas0{
