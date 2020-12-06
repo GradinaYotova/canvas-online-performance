@@ -1,11 +1,6 @@
 var socket;
 var mySketches = [];
 
-var r;
-var g;
-var b;
-var a;
-
 socket = io.connect('https://canvas-online.herokuapp.com/'); 
 // socket = io.connect('http://localhost:3000');
 
@@ -21,13 +16,8 @@ var myDrawingSketch = function(p) {
 	p.newDrawing = function(data){
 		if(data.index === p.index) {
 
-			r = random(255); 
-			g = random(100,200); 
-			b = random(100);
-			a = random(200,255);
-
 			p.noStroke();
-			p.fill(r,g,b,a);
+			p.fill(255,0,1);
 			p.rect(data.x, data.y, 5, 5);
 		}
 	}
