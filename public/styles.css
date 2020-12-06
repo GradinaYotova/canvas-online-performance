@@ -1,62 +1,12 @@
 body{
 	height:3000px;
-/*	background-image: url("grid-long.png");
-	background-size: 100%;
-  	background-position: center;
-  	background-repeat: no-repeat;*/
   	background-color:rgba(0,255,0);
 }
 
 #defaultCanvas0{
-	margin-top:6vh;
-	margin-left:0vw;	
+	margin-top:5%;
+	margin-left:5%;	
 	width:100%;
 }
 
-#defaultCanvas1{
-	margin-top:6vh;
-	margin-left:23vw;
-}
-
-#defaultCanvas2{
-	margin-top:6vh;
-	margin-left:23vw;
-}
-#defaultCanvas3{
-	margin-top:6vh;
-	margin-left:23vw;	
-}
-
-#defaultCanvas4{
-	margin-top:6vh;
-	margin-left:23vw;
-}
-
-#defaultCanvas5{
-	margin-top:6vh;
-	margin-left:23vw;
-}
-#defaultCanvas6{
-	margin-top:6vh;
-	margin-left:23vw;	
-}
-
-#defaultCanvas7{
-	margin-top:6vh;
-	margin-left:23vw;
-}
-
-#defaultCanvas8{
-	margin-top:6vh;
-	margin-left:23vw;
-}
-#defaultCanvas9{
-	margin-top:6vh;
-	margin-left:23vw;	
-}
-
-#defaultCanvas10{
-	margin-top:6vh;
-	margin-left:23vw;
-}
 
