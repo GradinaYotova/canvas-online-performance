@@ -2,22 +2,21 @@ var socket;
 var mySketches = [];
 
 socket = io.connect('https://canvas-online.herokuapp.com/'); 
-// socket = io.connect('http://localhost:3000');
+// socket = io.connect('http://192.168.88.23:3000');
 
 var myDrawingSketch = function(p) {
 
 	p.setup = function() {
-		p.createCanvas(1284.09, 437.67);
-		p.background(215);
+		p.createCanvas(400, 100);
+		p.background(225);
 
 		socket.on('mouse', p.newDrawing);
 	}
-		
+
 	p.newDrawing = function(data){
 		if(data.index === p.index) {
-
 			p.noStroke();
-			p.fill(0);
+			p.fill(255,0,1);
 			p.rect(data.x, data.y, 5, 5);
 		}
 	}
@@ -35,7 +34,7 @@ var myDrawingSketch = function(p) {
 		socket.emit('mouse', p.data); 
 
 		p.noStroke();
-		p.fill(255,0,1);
+		p.fill(0);
 		p.rect(p.mouseX, p.mouseY, 5, 5);
 	}
 
@@ -48,13 +47,4 @@ for(var i = 0; i < 1; i++) {
 	mySketches[i] = new p5(myDrawingSketch);
 	mySketches[i].index = i;
 }
-
-var link = document.createElement('a');
-    link.innerHTML = 'download image';
-link.addEventListener('click', function(ev) {
-    link.href = defaultCanvas0.toDataURL();
-    link.download = "mypainting.png";
-}, false);
-document.body.appendChild(link);
-
 
